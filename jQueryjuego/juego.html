@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/juego.js"></script>
+    <script></script>
+    <title>Juego Carta</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgb(87, 203, 171);
+            border: 1px solid black;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .detras{
+            margin-top: 5px;
+            height: 270px;
+            width: 270px;
+        }
+
+        .titulo{
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+ 
+<body>
+
+    <h3 class="titulo">Encuentra al Pokemon</h3>
+
+    <div class="grid-container">
+        <div class="celda"><img src="img/detras.png" alt="detras" class="detras" id="detras0"></div>
+        <div class="celda"><img src="img/detras.png" alt="detras" class="detras" id="detras1"></div>
+        <div class="celda"><img src="img/detras.png" alt="detras" class="detras" id="detras2"></div>
+        <div class="celda"><img src="img/detras.png" alt="detras" class="detras" id="detras3"></div>
+        <div class="celda"><img src="img/detras.png" alt="detras" class="detras" id="detras4"></div>
+        <div class="celda"><img src="img/detras.png" alt="detras" class="detras" id="detras5"></div>
+    </div>
+
+</body>
+
+</html>

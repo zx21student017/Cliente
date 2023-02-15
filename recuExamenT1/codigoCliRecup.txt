@@ -1,0 +1,78 @@
+====================================================
+
+Ejercicio 2:
+
+<form action="noExiste.php" method="post" onsubmit="return validaDatos()">
+	Texto: <input type="text" name="texto" id="tex"><br>
+	Número: <input type=”text” name=”numero” id=”num”><br>
+	<input type="submit" value="envia">
+</form>
+
+====================================================
+
+Ejercicio 4:
+
+<html>
+	<head></head>
+	<body>
+		<table border=”1”>
+			<tr><td id=”c1”>Contenido de celda 1</td></tr>
+			<tr><td id=”c2”>Contenido de celda 2</td></tr>
+			<tr><td id=”c3”>Contenido de celda 3</td></tr>
+		</table>
+	</body>
+</html>
+
+====================================================
+
+Ejercicio 5:
+
+<html lang="es" dir="ltr">
+  	<head>
+    		<meta charset="utf-8">
+    		<script src="ejer5.js" charset="utf-8"></script>
+  	</head>
+	<body>
+		<button onclick="ponerBorde()">Poner borde</button>
+		<button onclick="quitarBorde()">Quitar borde</button>
+		Ancho borde: <input type="text" id="ancho" value="2">
+		<p id="parrafo">
+			En un lugar de La Mancha<br />
+			De cuyo nombre no quiero acordarme<br />
+			No ha mucho tiempo que vivía un hidalgo<br />
+		</p>
+	</body>
+</html>
+
+====================================================
+
+Ejercicio 6:
+
+#!python 
+import cgi,json
+form = cgi.FieldStorage()
+nms = form['numeros'].value
+nms = nms.split(" ")
+resultado=0
+premiados=[1,4,21,24,46]
+for n in nms:
+    if int(n) in premiados:
+        resultado+=1
+print("Content-Type: text/plain\n")
+print(json.dumps(resultado))
+----------------------------------------------------
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  	<head>
+    		<meta charset="utf-8">
+   		 <title></title>
+  	</head>
+  	<body>
+    		Introduce los 5 números separados por espacio.<br>
+    		Euromillones: <input type=”text” id=”boleto” />
+    		<button onclick=”compruebaLoteria()”>Comprueba loteria</button>
+    		<p id=”salida”></p>
+  	</body>
+</html>
+
+====================================================

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="js/tMetodos.js"></script>
+</head>
+
+<body>
+    <b>onchange:</b><br>
+    Texto 1: <input type="text" id="texto1" onchange="muestra(1)"><br />
+    Texto 2: <input type="text" id="texto2" onchange="muestra(2)"><br><br>
+
+    <b>onclick:</b>
+    <p id="des" onclick="over()">Desaparece</p>
+
+    <b>onmouseout:</b>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)">Mouse Over Me</div><br>
+
+    <b>onmouseup:</b>
+    <div onmousedown="pulsado(this)" onmouseup="sinpulsar(this)">Click Me</div><br>
+
+    <b>onfocus:</b><br>
+    <input type="text" onfocus="myFunction(this)">Pon tu texto aqui</input><br>
+
+</body>
+
+</html>

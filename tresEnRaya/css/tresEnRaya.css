@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    background: rgb(129, 129, 129);
+}
+.tablero {
+    display: grid;
+	background-color: grey;
+	justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 220px 220px 220px;
+	gap: 20px;
+}
+.tablero > div {
+    background-color: grey;
+	width:220px;
+	height:220px;
+}
+.tablero > div > img{
+	padding:10px;
+    border-radius: 70px;
+	box-shadow: 10px 10px 28px #8e7b7b,
+			-14px -14px 28px #f6d5d5;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+    justify-content: center;
+    display: grid;
+    margin: 20px;
+}
+.resetear {
+    justify-content: center;
+    background-color: aqua;
+}

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../servidor/cookies"
+		},
+		{
+			"path": "../../servidor/contadorCookies"
+		},
+		{
+			"path": "../../servidor/loginCookiesV1"
+		}
+	],
+	"settings": {}
+}

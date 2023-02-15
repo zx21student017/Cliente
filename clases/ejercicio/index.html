@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/dbjCanvas.js"></script>
+    <script type="text/javascript" src="js/rectangulo.js"></script>
+    <script type="text/javascript" src="js/principal.js"></script>
+    <title>Clases</title>
+</head>
+
+<body style="text-align: center;">
+    <label for="ancho">Alto: </label>
+    <input type="number" min="10" max="390" id="ancho" value="10" onchange="dibuja()">
+    <br>
+    <label for="alto">Ancho: </label>
+    <input type="number" min="10" max="390" id="alto" value="10" onchange="dibuja()">
+    <br>
+    <button class="btnResetear" onclick="borrar()">Reiniciar</button>
+    <br>
+    <canvas width="400" height="600" id="micanvas" style="border: 1px solid black;"></canvas>
+</body>
+
+</html>
